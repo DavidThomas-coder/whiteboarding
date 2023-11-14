@@ -2,23 +2,24 @@
 // return a sorted array with the integers list from lowest to highest. 
 // No .sort
 
-array = [23, 17, 15, 29, 3]
+
+const array = [23, 17, 15, 29, 3]
 
 const sortIntegers = (array) => {
+    const sortedArray = [...array];
 
-    const sortedArray = [...array]
-
-    for (i = 0; i < sortedArray.length; i++ ) {
-        for (j = 0; j < sortedArray.length; j++) {
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+        for (let j = 0; j < sortedArray.length - 1 - i; j++) {
             if (sortedArray[j] > sortedArray[j + 1]) {
-                const temp = sortedArray[j + 1]
-                sortedArray[j] = sortedArray[j + 1]
-                sortedArray[j + 1] = temp
-            }   
+                // Swap the elements if they are in the wrong order
+                const temp = sortedArray[j];
+                sortedArray[j] = sortedArray[j + 1];
+                sortedArray[j + 1] = temp;
+            }
         }
     }
 
-    return sortedArray
+    return sortedArray;
 }
 
 console.log(sortIntegers(array))
