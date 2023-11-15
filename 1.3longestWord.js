@@ -6,7 +6,6 @@ const inputString = "David once ate an entire turkey";
 
 const longestWord = (string) => {
     const splitWords = string.split(' ');
-
     let currentLongest = ''; 
 
     for (let i = 0; i < splitWords.length; i++) {

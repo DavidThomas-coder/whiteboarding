@@ -3,18 +3,23 @@
 // The strings will not be the same length. 
 // For example if "hi" and "hello" are given, it should return "hihellohi"
 
-string1 = 'butt'
-string2 = 'calculator'
+const string1 = 'hi'
+const string2 = 'hello'
 
 const shortLongShort = (string1, string2) => {
+   let shortString, longString;
 
-   const shortString = (string1.length < string2.length) ? string1 : string2
-   const longString = (string1.length < string2.length) ? string2 : string1
+   if (string1.length < string2.length) {
+       shortString = string1;
+       longString = string2;
+   } else {
+       shortString = string2;
+       longString = string1;
+   }
 
-   const combinedString = shortString + longString + shortString
+   const result = shortString + longString + shortString;
 
-   return combinedString
-
+   return result;
 }
 
 console.log(shortLongShort(string1, string2))
