@@ -4,15 +4,7 @@
 const string = 'accordion'
 
 const removeDuplicateLetters = (string) => {
-    let firstTimes = []
 
-    for (let i = 0; i < string.length; i++) {
-        if (!firstTimes.includes(string[i])) {
-            firstTimes += string[i]
-        }
-    }
-
-    return firstTimes
 }
 
 console.log(removeDuplicateLetters(string))

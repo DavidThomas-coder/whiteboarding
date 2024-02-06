@@ -5,17 +5,7 @@
 const string = 'bugbear'
 
 const letterLocation = (word) => {
-    const result = {}
 
-    for (let i = 0; i < word.length; i++) {
-        if (result[string[i]]) {
-            result[string[i]].push(i)
-        } else {
-            result[string[i]] = [i]
-        }
-    }
-
-    return result
 }
 
 console.log(letterLocation(string))

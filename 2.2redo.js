@@ -4,18 +4,7 @@
 const string = 'MY dinner IS a GIANT sandwich'
 
 const upperLower = (string) => {
-    let changedLetter = ''
 
-    for (i = 0; i < string.length; i++) {
-        if (string[i] === string[i].toLowerCase()) {
-            changedLetter += string[i].toUpperCase()
-        }
-        else {
-            changedLetter += string[i].toLowerCase()
-        }
-    }
-
-    return changedLetter
 }
 
 console.log(upperLower(string))

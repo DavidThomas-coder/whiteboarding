@@ -7,19 +7,7 @@ const string1 = 'hi'
 const string2 = 'hello'
 
 const shortLongShort = (string1, string2) => {
-   let shortString, longString;
 
-   if (string1.length < string2.length) {
-       shortString = string1;
-       longString = string2;
-   } else {
-       shortString = string2;
-       longString = string1;
-   }
-
-   const result = shortString + longString + shortString;
-
-   return result;
 }
 
 console.log(shortLongShort(string1, string2))
