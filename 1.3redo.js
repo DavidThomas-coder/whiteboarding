@@ -12,7 +12,8 @@ const longestWord = (string) => {
         if (splitWords[i].length > longestWord.length) {
             longestWord = splitWords[i]
         }
-    } 
+    }
+
     return longestWord
 }
 
