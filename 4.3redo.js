@@ -2,8 +2,3 @@
 
 const string = 'This one time it was a time when this time was at Subway'
 
-const wordFrequency = (string) => {
-
-}
-
-console.log(wordFrequency(string))

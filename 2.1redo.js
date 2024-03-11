@@ -4,8 +4,6 @@
 
 const array = [29, 4, 16, 9, 22]
 
-const sortIntegers = (array) => {
-
-}
+const sortIntegers = (array) => {}
 
 console.log(sortIntegers(array))

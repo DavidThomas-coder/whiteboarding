@@ -3,8 +3,3 @@
 
 const string = 'accordion'
 
-const removeDuplicateLetters = (string) => {
-
-}
-
-console.log(removeDuplicateLetters(string))

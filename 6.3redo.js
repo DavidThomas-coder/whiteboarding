@@ -4,8 +4,3 @@
 string1 = 'lasagna'
 string2 = 'pasta'
 
-const bothStrings = (string1, string2) => {
-
-}
-
-console.log(bothStrings(string1, string2))

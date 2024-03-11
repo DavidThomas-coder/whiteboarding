@@ -4,8 +4,3 @@
 
 const string = 'bugbear'
 
-const letterLocation = (word) => {
-
-}
-
-console.log(letterLocation(string))

@@ -3,8 +3,6 @@
 
 const string = 'MY dinner IS a GIANT sandwich'
 
-const upperLower = (string) => {
-
-}
+const upperLower = (string) => {}
 
 console.log(upperLower(string))

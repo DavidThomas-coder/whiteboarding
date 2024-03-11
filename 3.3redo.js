@@ -2,8 +2,3 @@
 
 word = 'fruit'
 
-const noVowels = (word) => {
-
-}
-
-console.log(noVowels(word))

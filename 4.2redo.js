@@ -5,8 +5,3 @@
 const number1 = 12
 const number2 = 6
 
-const multiply = (number1, number2) => {
-
-}
-
-console.log(multiply(number1, number2))

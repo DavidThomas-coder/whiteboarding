@@ -6,8 +6,3 @@
 const string1 = 'hi'
 const string2 = 'hello'
 
-const shortLongShort = (string1, string2) => {
-
-}
-
-console.log(shortLongShort(string1, string2))
