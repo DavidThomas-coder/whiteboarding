@@ -4,3 +4,7 @@
 
 string = "David once ate an entire turkey and it was bonkers forrealzzz"
 
+function longestWord(string) {
+    let longest = ''
+    
+}
