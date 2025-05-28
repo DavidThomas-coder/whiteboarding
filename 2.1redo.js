@@ -4,8 +4,21 @@
 
 const array = [29, 4, 16, 9, 22]
 
-const sortIntegers = (array) => {
-    const sortedArray = []
-
-    for (let i = 0; i < array.length; )
+function sortIntegers(array) {
+    for (let i = 0; i < array.length; i++) {
+        let minValue = array[i]
+        let minIndex = i
+        for (let j = i; j < array.length; j++) {
+            if (array[j] < minValue) {
+                minValue = array[j]
+                minIndex = j
+            }
+        }
+        let temp = array[i]
+        array[i] = array[minIndex]
+        array[minIndex] = temp
+    }
+    return array
 }
+
+console.log(sortIntegers(array))
