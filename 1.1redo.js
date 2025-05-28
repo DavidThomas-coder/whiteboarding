@@ -2,3 +2,12 @@
 
 array = [1,2,3,4,5]
 
+function getEvenNumbers(array) {
+    const odds = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
+            odds.push(numbers[i])
+        }
+    }
+    return odds
+}
