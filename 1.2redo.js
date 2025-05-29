@@ -2,13 +2,13 @@
 
 array = [1, 2, 3, 4, 5, 6]
 
-function doubledNumbers(array) {
-    const doubles = []
+function doubleNumbers(array) {
+    let doubled = []
 
     for (let i = 0; i < array.length; i++) {
-        doubles.push(array[i] *2)
+        doubled.push(array[i] * 2)
     }
-    return doubles
+    return doubled
 }
 
-console.log(doubledNumbers(array))
+console.log(doubleNumbers(array))
