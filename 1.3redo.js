@@ -6,14 +6,14 @@ string = "David once ate an entire turkey and it was bonkers forrealzzzforrealzz
 
 function longestWord(string) {
     let splitWords = string.split(' ')
-    let currentLongest = ''
+    let longestWord = ''
 
     for (let i = 0; i < splitWords.length; i++) {
-        if (splitWords[i].length > currentLongest.length) {
-            currentLongest = splitWords[i]
+        if (splitWords[i].length > longestWord.length) {
+            longestWord = splitWords[i]
         }
     }
-    return currentLongest
+    return longestWord
 }
 
 console.log(longestWord(string))
