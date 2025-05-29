@@ -2,23 +2,19 @@
 // return a sorted array with the integers list from lowest to highest. 
 // No .sort
 
-const array = [29, 4, 16, 9, 22]
+const array = [29, 4, 16, 9, 22, 1]
 
-function sortIntegers(array) {
-    for (let i = 0; i < array.length; i++) {
-        let minValue = array[i]
-        let minIndex = i
-        for (let j = i; j < array.length; j++) {
-            if (array[j] < minValue) {
-                minValue = array[j]
-                minIndex = j
+function sortedArray(array) {
+    const sortedArray = [...array]
+
+    for (let i = 0; i < sortedArray.length; i++) {
+        for (let j = i + 1; j < sortedArray.length; j++) {
+            if (sortedArray[i] > sortedArray[j]) {
+                [sortedArray[i], sortedArray[j]] = [sortedArray[j], sortedArray[i]]
             }
         }
-        let temp = array[i]
-        array[i] = array[minIndex]
-        array[minIndex] = temp
     }
-    return array
+    return sortedArray
 }
 
-console.log(sortIntegers(array))
+console.log(sortedArray(array))

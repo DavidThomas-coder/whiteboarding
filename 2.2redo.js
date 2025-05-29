@@ -9,10 +9,12 @@ function upperLower(string) {
     for (let i = 0; i < string.length; i++) {
         if (string[i] === string[i].toLowerCase()) {
             changedLetters += string[i].toUpperCase()
-        } else {
+        }
+        else {
             changedLetters += string[i].toLowerCase()
         }
     }
+
     return changedLetters
 }
 
