@@ -17,10 +17,8 @@ function shortLongShort(string1, string2) {
         short = string2
         long = string1
     }
-
-    let combined = short + long + short
-
-    return combined
+    let result = short + long + short
+    return result
 }
 
 console.log(shortLongShort(string1, string2))
